@@ -1,7 +1,8 @@
 @import url('https://googleapis.com');
 
 :root {
-    --font: 'Roboto Mono', monospace;
+    --font-main: 'Inter', sans-serif;
+    --font-heading: 'Almendra Display', serif;
     --background: white;
     --color: #232333;
 }
@@ -10,7 +11,7 @@
 body {
     background-color: var(--background);
     color: var(--color);
-    font-family: var(--font);
+    font-family: var(--font-main);
     margin: 0;
     padding: 0;
     text-rendering: optimizeLegibility;
@@ -47,8 +48,8 @@ body {
 }
 
 #userName {
-    font-family:'Almendra Display', serif;
-    font-size: 1.5rem;
+    font-family: var(--font-heading);
+    font-size: 2rem;
     font-weight: 400;
     text-align: center;
     text-decoration: none;
