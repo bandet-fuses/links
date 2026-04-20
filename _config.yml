@@ -1,3 +1,16 @@
-title: "Links"
-remote_theme: jekyll/jekyll-sitemap
-encoding: utf-8
+title: "Fuses"
+baseurl: "" # Leave empty if using a custom domain, or set to "/your-repo-name"
+url: "" 
+
+# This is the important part:
+theme: [] 
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - .jekyll-cache
+  - vendor/
