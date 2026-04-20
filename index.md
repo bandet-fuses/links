@@ -7,3 +7,4 @@ layout: default
 [Listen & preorder on Bandcamp](https://bandetfuses.bandcamp.com/album/sawdust-in-the-transmission-2){: data-logo="apple"}
 [Watch "Garden of Ashes" video](https://www.youtube.com/watch?v=zwFSUqUk4rY){: data-logo="youtube"}
 [Follow Fuses on Instagram](https://www.instagram.com/bandet.fuses/){: data-logo="instagram"}
+[Preorder from Having Fun Records](https://ffm.to/mwdbklo)

@@ -47,6 +47,7 @@ body {
 }
 
 #userName {
+    font-family:'Almendra Display', serif;
     font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
@@ -66,7 +67,7 @@ footer {
 .link {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 20px;
     padding: 17px;
     font-size: 1rem;
