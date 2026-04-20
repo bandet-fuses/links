@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex,nofollow" />
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <img id="userPhoto" src="{{ '/assets/img/avatar.svg' | relative_url }}" alt="User Photo">
+            <h1><a href="#" id="userName" rel="noopener">Fuses</a></h1>
+            
+            <div id="links">
+            {% assign my_links = content | split: '<a ' %}
+            {% for part in my_links offset:1 %}
+                {% assign link_html = part | split: '</a>' | first %}
+                {% assign href = link_html | split: 'href="' | last | split: '"' | first %}
+                {% assign text = link_html | split: '>' | last %}
+                
+                <!-- Look for the logo_id attribute (e.g. spotify) -->
+                {% assign logo_id = link_html | split: 'logo="' | last | split: '"' | first %}
+
+                <a class="link" href="{{ href }}" rel="noopener">
+                {% if site.data.logos[logo_id] %}
+                    <span class="link-icon">
+                    {{ site.data.logos[logo_id] }}
+                    </span>
+                {% endif %}
+                {{ text }}
+                </a>
+            {% endfor %}
+            </div>
+
+            <footer>
+                Footer text.
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
