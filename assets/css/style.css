@@ -6,6 +6,7 @@
     --color: #232333;
 }
 
+/* 1. Reset & Base Styles */
 body {
     background-color: var(--background);
     color: var(--color);
@@ -20,30 +21,22 @@ body {
     flex-direction: column;
 }
 
-.container {
-    flex: 1 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-.content {
+/* 2. Layout Containers */
+.container, .content {
     display: flex;
     flex-direction: column;
     flex: 1 auto;
     align-items: center;
     justify-content: center;
-    margin: 0;
 }
 
-footer {
-    text-align: center;
-    font-size: 0.75rem;
-    font-weight: 400;
-    padding-bottom: 20px;
+#links {
+    max-width: 90%;
+    width: 350px;
+    margin: 27px auto;
 }
 
+/* 3. Header & Footer */
 #userPhoto {
     width: 96px;
     height: 96px;
@@ -54,35 +47,32 @@ footer {
 }
 
 #userName {
-    width: 100%;
     font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
     text-decoration: none;
     line-height: 1.25;
-    display: block;
     color: var(--color);
 }
 
-#links {
-    max-width: 90%;
-    width: 350px; /* Fixed width for better button alignment */
-    display: block;
-    margin: 27px auto;
+footer {
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 400;
+    padding-bottom: 20px;
 }
 
+/* 4. Link Buttons */
 .link {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
     margin-bottom: 20px;
     padding: 17px;
     font-size: 1rem;
     font-weight: 500;
     border-radius: 5px;
-    border: dashed var(--color) 2px;
-    text-align: center;
+    border: solid var(--color) 2px;
     text-decoration: none;
     color: var(--color);
     word-wrap: break-word;
@@ -93,30 +83,31 @@ footer {
     transform: scale(1.02);
 }
 
-.link-icon {
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
+.link-text {
+    flex-grow: 1;
+    text-align: center;
 }
 
+/* 5. Icons & Spacers (Merged redundancies here) */
+.link-icon, .link-spacer {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.link-icon svg {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 100%;
+}
+
+/* 6. Theming */
 @media (prefers-color-scheme: dark) {
     :root {
         --background: #202124;
         --color: white;
     }
-}
-
-.link-icon {
-    width: 24px;   /* The container size */
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0; /* Prevents the icon from squishing on small screens */
-}
-
-.link-icon svg {
-    width: 100% !important;  /* Overrides the inline width="24" */
-    height: auto !important; /* Maintains aspect ratio based on the viewBox */
-    max-height: 100%;
 }
