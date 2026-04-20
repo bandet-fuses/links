@@ -1,6 +1,6 @@
 title: "Fuses"
-baseurl: "" # Leave empty if using a custom domain, or set to "/your-repo-name"
-url: "" 
+baseurl: "/links" # Replace with your actual repo name
+url: "https://bandet-fuses.github.io"
 
 # This is the important part:
 theme: [] 
