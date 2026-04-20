@@ -10,16 +10,22 @@ body::before {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
     height: 100%;
-    /* Navigate up from /css/ to /assets/ then down into /img/ */
-    background-image: url('../img/bg.png'); 
+    background-image: url('../img/bg.png');
     background-size: cover;
     background-position: center;
-    filter: blur(50px); /* Adjust this for more/less blur */
-    transform: scale(1.1); /* Prevents white edges from the blur */
-    z-index: -1; /* Keeps the image behind your content */
-    opacity: 0.5; /* Makes it a subtle backdrop */
+    
+    /* Effects */
+    filter: blur(50px);
+    opacity: 0.75; /* Keeps it subtle */
+    
+    /* Mobile Fixes */
+    transform: scale(1.1); 
+    will-change: transform; 
+    z-index: -1;
 }
 
 /* 1. Reset & Base Styles */
