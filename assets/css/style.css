@@ -47,6 +47,8 @@ body {
 
 #userName {
     font-family: var(--font-heading) !important;
+    -webkit-text-stroke: 0.4px var(--color); 
+    text-stroke: 0.4px var(--color);
     font-size: 2rem;
     font-weight: 400;
     text-align: center;
@@ -85,7 +87,7 @@ footer {
 
 .link-text {
     flex-grow: 1;
-    text-align: center;
+    text-align: right;
 }
 
 /* 5. Icons & Spacers (Merged redundancies here) */
