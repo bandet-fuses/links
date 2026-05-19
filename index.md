@@ -2,7 +2,8 @@
 layout: default
 ---
 
-[Listen on Spotify](https://open.spotify.com/album/6wwa5cWN3HC2Yllyc4FrZW){: data-logo="spotify"}
+[Watch "Aniline" video](https://www.youtube.com/watch?v=Dwl2BfyuJkQ){: data-logo="youtube"}
+[Listen on Spotify](https://open.spotify.com/album/5Dm4ZIYBg9SS6VNrAw4GQc){: data-logo="spotify"}
 [Listen on Apple Music](https://music.apple.com/us/album/sawdust-in-the-transmission/1891519818){: data-logo="apple"}
 [Listen on Tidal](https://tidal.com/album/514042692/track/514042694){: data-logo="tidal"}
 [Listen on Qobuz](https://open.qobuz.com/album/e048831qayrtr){: data-logo="qobuz"}
